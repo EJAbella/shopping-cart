@@ -8,7 +8,7 @@ const App = () => {
         <div>
             <CartHeader/>
             <CartItems/>
-            <CartFooter/>
+            <CartFooter copyright={'2018'}/>
         </div>
     )
 }
