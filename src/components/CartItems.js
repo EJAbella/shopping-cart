@@ -2,7 +2,7 @@ import React from 'react';
 import CartItem from './CartItem';
 
 const CartItems = ({items}) => {
-    let itemList = items.map(item => <CartItem key={item.id} item={item} />)
+    let itemList = items.map((item, i) => <CartItem key={i} item={item} />);
 
     return (
         <div className="container">
@@ -19,7 +19,7 @@ const CartItems = ({items}) => {
             </div>
         </div>
     )
-}
+};
 
 
 export default CartItems;
