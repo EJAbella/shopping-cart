@@ -1,5 +1,6 @@
 import React from 'react';
 import CartItem from './CartItem';
+import TotalCost from "./TotalCost";
 
 const CartItems = ({items}) => {
     let itemList = items.map((item, i) => <CartItem key={i} item={item} />);
@@ -17,6 +18,7 @@ const CartItems = ({items}) => {
                 </div>
                 {itemList}
             </div>
+            <TotalCost items={items}/>
         </div>
     )
 };
